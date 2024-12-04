@@ -36,10 +36,25 @@
             <div id="phone-container" class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             </div>
             <!-- Show all button -->
-            <div id="show-all-container" class="hidden mt-5">
-                <button onclick="" class=" ml-3  btn btn-active btn-primary">Show all</button>
+            <div id="show-all-container" class="hidden my-5 text-center">
+                <button onclick="handleShowAll()" class=" ml-3  btn btn-active btn-primary">Show all</button>
             </div>
         </section>
+
+        <!-- Show details modal -->
+        <!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
     </main>
     <footer class="w-[90%] mx-auto"></footer>
 
